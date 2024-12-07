@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" href="imagenes/icono_marlon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo_pagina.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagenes/imagen_marlon.jpg" alt="Foto de Marlon Enrique Pérez Cañizares" class="profile-picture">
+            <h1>Marlon Enrique Pérez Cañizares</h1>
+            <p>Estudiante de Ingeniería de Sistemas</p>
+            <button id="theme-toggle">Cambiar Modo</button>
+            <button id="christmas-mode-toggle">Navidad</button>
+            <select id="language-selector">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+            </select>
+            <!-- Botón del asistente de música -->
+            <button id="start-voice">🎤 Asistente de Música</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" data-lang="about">Sobre mí</a></li>
+            <li><a href="#skills" data-lang="skills">Habilidades</a></li>
+            <li><a href="#projects" data-lang="projects">Proyectos</a></li>
+            <li><a href="#contact" data-lang="contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2 data-lang="about-title">Sobre mí</h2>
+            <p data-lang="about-text">Soy Marlon Enrique Pérez Cañizares, estudiante de Ingeniería de Sistemas apasionado por la tecnología, el desarrollo web y la resolución de problemas complejos.</p>
+        </section>
+
+        <section id="skills">
+            <h2 data-lang="skills-title">Habilidades</h2>
+            <ul>
+                <li data-lang="skill1">Programación en Python, JavaScript y Java</li>
+                <li data-lang="skill2">Desarrollo web con HTML, CSS y JavaScript</li>
+                <li data-lang="skill3">Diseño y modelado de bases de datos</li>
+                <li data-lang="skill4">Resolución de problemas algorítmicos</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 data-lang="projects-title">Proyectos</h2>
+            <div class="project">
+                <h3 data-lang="project1-title">Proyecto 1: Sistema de Gestión de Inventarios</h3>
+                <p data-lang="project1-text">Un sistema desarrollado para optimizar la gestión de inventarios utilizando tecnologías web.</p>
+            </div>
+            <div class="project">
+                <h3 data-lang="project2-title">Proyecto 2: Plataforma Educativa</h3>
+                <p data-lang="project2-text">Una plataforma para estudiantes de primaria con actividades interactivas y contenido educativo.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 data-lang="contact-title">Contacto</h2>
+            <p data-lang="contact-text">Si deseas contactarme, puedes escribirme a:</p>
+            <ul>
+                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:maopromaster11@gmail.com">maopromaster11@gmail.com</a></li>
+                <li><i class="fas fa-phone"></i> Teléfono: +57 3205078562</li>
+                <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/Master-perez" target="_blank">linkedin.com/in/Master-perez</a></li>
+                <li><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/maito.perez.338" target="_blank">maito perez</a></li>
+                <li><i class="fab fa-youtube"></i> YouTube: <a href="https://www.youtube.com/@master11-ny2tz" target="_blank">@master11-ny2tz</a></li>
+                <li><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/+573205078562" target="_blank">+57 3205078562</a></li>
+            </ul>
+        </section>
+
+        <!-- Contenedor para el reproductor de música de YouTube -->
+        <div id="music-player-container" style="display: none;">
+            <div id="music-player">
+                <iframe id="youtube-player" width="100%" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marlon Enrique Pérez Cañizares. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
